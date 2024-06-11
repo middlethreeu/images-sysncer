@@ -33,5 +33,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/dolphindb/dolphindb:v2.00.12.2 docker://registry.cn-hangzhou.aliyuncs.com/sunxuehui/dolphindb:v2.00.12.2
+        skopeo copy docker://docker.io/dolphindb/dolphindb:v2.00.12.2 docker://registry.cn-hangzhou.aliyuncs.com/threeu/dolphindb:v2.00.12.2
  
