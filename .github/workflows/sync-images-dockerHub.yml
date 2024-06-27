@@ -34,5 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/postgres:16.3 docker://registry.cn-beijing.aliyuncs.com/bt-iot/postgres:16.3
+        skopeo copy docker://docker.io/dolphindb/dolphindb:v2.00.12.2 docker://registry.cn-beijing.aliyuncs.com/bt-iot/dolphindb:v2.00.12.2
  
