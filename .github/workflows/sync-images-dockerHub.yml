@@ -26,13 +26,13 @@ jobs:
     - name: Login to Docker Hub
       uses: docker/login-action@v2.2.0
       with:
-        registry: registry.cn-hangzhou.aliyuncs.com
+        registry: registry.cn-beijing.aliyuncs.com
         username: sunxuehui
-        password: 90-=op[]
+        password: Btiot-2024
         logout: false
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/emqx/emqx:5.7.0 docker://registry.cn-hangzhou.aliyuncs.com/threeu/emqx:5.7.0
+        skopeo copy docker://docker.io/postgres:16.3 docker://registry.cn-beijing.aliyuncs.com/postgres:16.3
  
